@@ -168,7 +168,7 @@ void SetRPTEntryDefaults(std::string strSettingEntry, std::string strEntryType, 
     AddLineToMap("datatype", "STRING");
     AddLineToMap("class", "\"\"");
     AddLineToMap("cacheable", "TRUE");
-    AddLineToMap("justify","RIGHT");
+    AddLineToMap("justify","LEFT");
     AddLineToMap("visibility", "TRUE");
     AddLineToMap("angle","0");
     AddLineToMap("length","10");
@@ -343,7 +343,7 @@ void ParseRowData(std::string strInputFile,  std::string strRowSearchString, std
       ilastRowEnd = iEndOfRow;
 
     if ((strRowSearchString == "%FOOT") && (strInputFile.find(strRowSearchString,iLastParamStart + 1) == std::string::npos)) // we have the last footer line
-      CurrentXMLSRowData.strRowText += strInputFile.substr(ilastRowEnd);  //Lets link the rest of the text to its end.
+      CurrentXMLSRowData.strRowText += strInputFile.substr(iEndOfRow);  //Lets link the rest of the text to its end.
     
     vecCurrentVector.push_back(CurrentXMLSRowData);
 
@@ -481,7 +481,7 @@ std::string HandleCellComments(std::string strInput)
     strInput.replace(iCommStart, iCommEnd- iCommStart, "");
     strInput.insert(iCellTextStart, strCommentText);
   }
-  printf("%s\n", strInput.c_str());
+//  printf("%s\n", strInput.c_str());
   return strInput;
 }
 
@@ -572,7 +572,7 @@ int main(int argc, char* argv[])
       if (itVec->strParameter.empty())
         itVec->strParameter = "%FOOT%";
       strOutputFile += CreateRTPSection(itVec->strParameter, iMaxHeight - iHeaderLineCountXML -iRowLineCountXML- iPosY);
-      strOutputFile += "        height = " + to_string(iPosY) + ";\n";
+      strOutputFile += "        height = " + to_string(iPosY+1) + ";\n";
     } 
     strOutputFile += CreateRTPSection(itVec->strRowText, iPosY);
     iPosY = iPosY -std::count(itVec->strRowText.begin(), itVec->strRowText.end(), '\n');

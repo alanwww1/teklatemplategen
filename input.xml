@@ -110,6 +110,7 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
    <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#EAEAEA" ss:Pattern="Solid"/>
    <NumberFormat ss:Format="#,##0"/>
   </Style>
   <Style ss:ID="s74">
@@ -130,6 +131,63 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
    <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="#,##0"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Elemlista">
@@ -175,15 +233,28 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s68"><Data ss:Type="String">%$length:16$ $formula:&quot;GetValue(&quot;PART_POS&quot;)&quot;$ $sortdirection:ASCENDING$%</Data></Cell>
     <Cell ss:StyleID="s76"><Data ss:Type="String">%$length:16$ $formula:&quot;GetValue(&quot;PROFILE&quot;)&quot;$%</Data></Cell>
-    <Cell ss:StyleID="s69"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:6$ $length:6$ $formula:&quot;round(GetValue(&quot;NUMBER&quot;),0)&quot;$ $oncombine:SUM$%</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:6$ $length:6$ $formula:&quot;round(GetValue(&quot;NUMBER&quot;),0)&quot;$ $oncombine:SUM$%</Font></ss:Data></Comment></Cell>
     <Cell ss:StyleID="s76"><Data ss:Type="String">%$length:12$ $formula:&quot;GetValue(&quot;MATERIAL&quot;)&quot;$%</Data></Cell>
-    <Cell ss:StyleID="s73"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;LENGTH&quot;),0)&quot;$%</Font></ss:Data></Comment></Cell>
-    <Cell ss:StyleID="s73" ss:Formula="=RC[-3]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;LENGTH&quot;),0)&quot;$%</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s77" ss:Formula="=RC[-3]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;WEIGHT&quot;),0.01)&quot;$%</Font></ss:Data></Comment></Cell>
     <Cell ss:StyleID="s73" ss:Formula="=RC[-5]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;AREA&quot;)/1000000,0.01)&quot;$%</Font></ss:Data></Comment></Cell>
     <Cell ss:StyleID="s73" ss:Formula="=RC[-7]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">%ROW%</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Összesen:</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81" ss:Formula="=SUM(INDIRECT(ADDRESS(1,COLUMN())):OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())),-1,0))"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s80" ss:Formula="=SUM(INDIRECT(ADDRESS(1,COLUMN())):OFFSET(INDIRECT(ADDRESS(ROW(),COLUMN())),-1,0))"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">%FOOT%</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
