@@ -81,7 +81,8 @@
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#EAEAEA" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s69">
    <Alignment ss:Vertical="Bottom"/>
@@ -109,7 +110,7 @@
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000" ss:Bold="1"/>
    <Interior ss:Color="#EAEAEA" ss:Pattern="Solid"/>
    <NumberFormat ss:Format="#,##0"/>
   </Style>
@@ -120,8 +121,8 @@
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
-   <NumberFormat ss:Format="#,##0.0"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0"/>
   </Style>
   <Style ss:ID="s76">
    <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
@@ -130,7 +131,7 @@
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000"/>
   </Style>
   <Style ss:ID="s77">
    <Alignment ss:Vertical="Bottom"/>
@@ -139,19 +140,18 @@
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000"/>
    <NumberFormat ss:Format="#,##0"/>
   </Style>
   <Style ss:ID="s78">
-   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
    <Borders>
     <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
     <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11"
-    ss:Color="#000000" ss:Bold="1"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000" ss:Bold="1"/>
    <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s79">
@@ -162,7 +162,7 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000" ss:Bold="1"/>
    <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s80">
@@ -173,7 +173,7 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000" ss:Bold="1"/>
    <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
    <NumberFormat ss:Format="#,##0"/>
   </Style>
@@ -185,9 +185,18 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
    </Borders>
-   <Font ss:FontName="Calibri" x:CharSet="238" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000" ss:Bold="1"/>
    <Interior ss:Color="#EEECE1" ss:Pattern="Solid"/>
    <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Elemlista">
@@ -195,15 +204,15 @@
    <NamedRange ss:Name="Print_Titles" ss:RefersTo="=Elemlista!R1:R2"/>
   </Names>
   <Table x:FullColumns="1" x:FullRows="1" ss:DefaultRowHeight="15">
-   <Column ss:AutoFitWidth="0" ss:Width="84"/>
-   <Column ss:AutoFitWidth="0" ss:Width="81"/>
-   <Column ss:AutoFitWidth="0" ss:Width="30"/>
-   <Column ss:AutoFitWidth="0" ss:Width="54.75"/>
-   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="43.5"/>
-   <Column ss:AutoFitWidth="0" ss:Width="41.25"/>
-   <Column ss:AutoFitWidth="0" ss:Width="37.5"/>
-   <Column ss:AutoFitWidth="0" ss:Width="34.5"/>
-   <Column ss:AutoFitWidth="0" ss:Width="44.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="61.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="96"/>
+   <Column ss:AutoFitWidth="0" ss:Width="35.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="56.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="45.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="35.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="40.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="45.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="35.25"/>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s62"><Data ss:Type="String">Jel</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="String">Profil</Data><NamedCell ss:Name="Print_Titles"/></Cell>
@@ -234,9 +243,9 @@
     <Cell ss:StyleID="s68"><Data ss:Type="String">%$length:16$ $formula:&quot;GetValue(&quot;PART_POS&quot;)&quot;$ $sortdirection:ASCENDING$%</Data></Cell>
     <Cell ss:StyleID="s76"><Data ss:Type="String">%$length:16$ $formula:&quot;GetValue(&quot;PROFILE&quot;)&quot;$%</Data></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:6$ $length:6$ $formula:&quot;round(GetValue(&quot;NUMBER&quot;),0)&quot;$ $oncombine:SUM$%</Font></ss:Data></Comment></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">%$length:12$ $formula:&quot;GetValue(&quot;MATERIAL&quot;)&quot;$%</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">%$length:12$ $formula:&quot;GetValue(&quot;MATERIAL&quot;)&quot;$ $justify:CENTERED$%</Data></Cell>
     <Cell ss:StyleID="s77"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;LENGTH&quot;),0)&quot;$%</Font></ss:Data></Comment></Cell>
-    <Cell ss:StyleID="s77" ss:Formula="=RC[-3]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s77" ss:Formula="=RC[-3]*RC[-1]/1000"><Data ss:Type="Number"></Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;WEIGHT&quot;),0.01)&quot;$%</Font></ss:Data></Comment></Cell>
     <Cell ss:StyleID="s73" ss:Formula="=RC[-5]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;AREA&quot;)/1000000,0.01)&quot;$%</Font></ss:Data></Comment></Cell>
@@ -261,7 +270,7 @@
    <PageSetup>
     <Header x:Margin="0.51181102362204722"
      x:Data="&amp;B&amp;&quot;-,Bold&quot;%$length:20$ $formula:&quot;GetValue(&quot;PROJECT.NAME&quot;)&quot;$%&amp;&quot;-,Normal&quot;&#10;%$length:20$ $formula:&quot;GetValue(&quot;TITLE1&quot;)&quot;$%&amp;K&amp;&quot;-,Bold&quot;ELEMLISTA&#10;%$length:20$ $formula:&quot;GetValue(&quot;TITLE2&quot;)&quot;$%&amp;J%$length:11$ $formula:&quot;GetValue(&quot;DATE&quot;)&quot;$%"/>
-    <Footer x:Margin="0.31496062992125984" x:Data="&amp;BJakosa Építő Kft.&amp;J&amp;O/&amp;M"/>
+    <Footer x:Margin="0.31496062992125984" x:Data="&amp;BJakosa Kft.&amp;J&amp;O/&amp;M"/>
     <PageMargins x:Bottom="0.98425196850393704" x:Left="0.39370078740157483"
      x:Right="0.39370078740157483" x:Top="0.98425196850393704"/>
    </PageSetup>
