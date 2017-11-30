@@ -488,7 +488,8 @@ std::string HandleCellComments(std::string strInput)
 int main(int argc, char* argv[])
 {
   std::string strInputFile, strOutputFile;
-  strInputFile=ReadFileToStr("/home/atti/Dokumentumok/teklatemplategen/input.xml");
+  std::string strInputFilename = argv[1];
+  strInputFile=ReadFileToStr(strInputFilename);
   if (strInputFile.empty())
   {
     printf ("input file not found or empty");
@@ -581,11 +582,10 @@ int main(int argc, char* argv[])
   strOutputFile += "    };\n";
   strOutputFile += "};\n";
   
-  if (!WriteFileFromStr("/home/atti/Dokumentumok/teklatemplategen/output.txt", strOutputFile))
+  if (!WriteFileFromStr(strInputFilename + ".rpt", strOutputFile))
   {
     printf ("Output file write error");
     return 1;
   }
 
-//  printf ("%s", strOutputFile.c_str());
 }
