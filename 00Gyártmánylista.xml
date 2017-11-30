@@ -199,15 +199,16 @@
    <Font ss:FontName="Monospac821 BT" x:Family="Modern" ss:Size="10.5" ss:Color="#000000"/>
   </Style>
  </Styles>
- <Worksheet ss:Name="Elemlista">
+ <Worksheet ss:Name="Gyártmánylista">
   <Names>
-   <NamedRange ss:Name="Print_Titles" ss:RefersTo="=Elemlista!R1:R2"/>
+   <NamedRange ss:Name="Print_Titles" ss:RefersTo="=Gyártmánylista!R1:R2"/>
   </Names>
   <Table x:FullColumns="1" x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:AutoFitWidth="0" ss:Width="68.5"/>
    <Column ss:AutoFitWidth="0" ss:Width="96"/>
    <Column ss:AutoFitWidth="0" ss:Width="35.25"/>
-   <Column ss:AutoFitWidth="0" ss:Width="130.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="45.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="84.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="40.5"/>
    <Column ss:AutoFitWidth="0" ss:Width="45.75"/>
    <Column ss:AutoFitWidth="0" ss:Width="35.25"/>
@@ -215,6 +216,7 @@
     <Cell ss:StyleID="s62"><Data ss:Type="String">Jel</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="String">Profil</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="String">Me.</Data><NamedCell ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Hossz</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="String">Név</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="String">Tömeg</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s63"><Data ss:Type="String">Tömeg</Data><NamedCell ss:Name="Print_Titles"/></Cell>
@@ -226,6 +228,7 @@
     <Cell ss:StyleID="s65"><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s66"><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">[db]</Data><NamedCell ss:Name="Print_Titles"/></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">[mm]</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s66"><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">[kg/db]</Data><NamedCell ss:Name="Print_Titles"/></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">[kg]</Data><NamedCell ss:Name="Print_Titles"/></Cell>
@@ -237,15 +240,17 @@
     <Cell ss:StyleID="s68"><Data ss:Type="String">%$length:16$ $formula:&quot;GetValue(&quot;ASSEMBLY_POS&quot;)&quot;$ $sortdirection:ASCENDING$%</Data></Cell>
     <Cell ss:StyleID="s76"><Data ss:Type="String">%$length:16$ $formula:&quot;GetValue(&quot;MAINPART.PROFILE&quot;)&quot;$%</Data></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:6$ $length:6$ $formula:&quot;round(GetValue(&quot;NUMBER&quot;),0)&quot;$ $oncombine:SUM$%</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;LENGTH&quot;),0.01)&quot;$%</Font></ss:Data></Comment></Cell>
     <Cell ss:StyleID="s82"><Data ss:Type="String">%$length:30$ $formula:&quot;GetValue(&quot;MAINPART.NAME&quot;)&quot;$ $justify:CENTERED$%</Data></Cell>
-    <Cell ss:StyleID="s74"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;WEIGHT&quot;),0.01)&quot;$%</Font></ss:Data></Comment></Cell>
-    <Cell ss:StyleID="s73" ss:Formula="=RC[-3]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;WEIGHT&quot;),0)&quot;$%</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s73" ss:Formula="=RC[-4]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
     <Cell ss:StyleID="s74"><Data ss:Type="Number"></Data><Comment><ss:Data><Font>%$datatype:DOUBLE$ $decimals:10$ $length:10$ $formula:&quot;round(GetValue(&quot;AREA&quot;)/1000000,0.01)&quot;$%</Font></ss:Data></Comment></Cell>
-    <Cell ss:StyleID="s73" ss:Formula="=RC[-5]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s73" ss:Formula="=RC[-6]*RC[-1]"><Data ss:Type="Number"></Data></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">%ROW $contenttype:&quot;ASSEMBLY&quot;$ %</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s78"><Data ss:Type="String">Összesen:</Data></Cell>
+    <Cell ss:StyleID="s79"/>
     <Cell ss:StyleID="s79"/>
     <Cell ss:StyleID="s79"/>
     <Cell ss:StyleID="s79"/>
